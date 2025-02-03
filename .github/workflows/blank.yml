@@ -21,20 +21,20 @@ jobs:
     - name: Build Project
       run: |
         echo "Starting the build process..."
-        make build  # Replace with your build command
+       # make build  # Replace with your build command
 
     # Stage 3: Test
     - name: Run Tests
       run: |
         echo "Running tests..."
-        make test   # Replace with your test command
+        # make test   # Replace with your test command
 
     # Stage 4: Deploy
     - name: Deploy Application
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       run: |
         echo "Deploying application..."
-        make deploy # Replace with your deployment command
+       # make deploy # Replace with your deployment command
 
     # Stage 5: Notify
     - name: Send Notification
